@@ -57,13 +57,13 @@ Master server :
 
 1.Run setup.sh then reboot the server.
 
-2.Run install.sh to do the installation.
+2.After rebooted,run install.sh to do the installation.
 
 Node Servers :
 
 1.Run setup.sh then reboot the server.
 
-2.Run install.sh to do the installation.
+2.After rebooted,run install.sh to do the installation.
 
 --------------------------------------------------------------------------------------------------
 Testing an APP,
