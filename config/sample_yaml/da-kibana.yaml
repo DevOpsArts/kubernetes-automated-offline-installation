@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+ name: da-kibana
+ namespace: devopsart
+spec:
+ replicas: 1
+ template:
+  metadata:
+   labels:
+    app: da-kibana
+  spec:
+   containers:
+   - name: da-kibana
+     image: 192.168.1.120:5000/devopsart-kibana-ubu-v1.3:latest
+     imagePullPolicy: Always
+     command: [ "/bin/bash", "-c", "--" ]
+     args: [ "while true; do sleep 30; done;" ]
+     command: [ "/bin/bash", "-c", "--" ]
+     args: [ "while true; do monit;sleep 10; done;" ]
+     ports:
+     - containerPort: 5601

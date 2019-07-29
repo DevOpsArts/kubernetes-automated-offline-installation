@@ -1,0 +1,7 @@
+[root@k8s-node k8sautomation]# docker images
+REPOSITORY                                                       TAG                 IMAGE ID            CREATED             SIZE
+k8s.gcr.io/kube-proxy                                            v1.14.1             20a2d7035165        24 hours ago        82.1 MB
+quay.io/kubernetes-ingress-controller/nginx-ingress-controller   0.23.0              42d47fe0c78f        5 weeks ago         591 MB
+quay.io/coreos/flannel                                           v0.11.0-amd64       ff281650a721        2 months ago        52.6 MB
+k8s.gcr.io/pause                                                 3.1                 da86e6ba6ca1        15 months ago       742 kB
+[root@k8s-node k8sautomation]#

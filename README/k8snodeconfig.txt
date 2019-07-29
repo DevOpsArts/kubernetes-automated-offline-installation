@@ -1,0 +1,2 @@
+  kubeadm join 10.240.0.52:6443 --token 6vytke.t6fjyb9y2rske4kh --discovery-token-ca-cert-hash sha256:b1158ce1647efc9f9c40b34b3c39f6ca1ff2d7922cacca484b5149273e3ebea2
+

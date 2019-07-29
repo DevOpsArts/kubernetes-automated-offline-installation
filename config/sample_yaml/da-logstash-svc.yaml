@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: da-logstash-svc
+  namespace: devopsart
+  labels:
+    run: da-logstash-svc
+spec:
+  type: ClusterIP
+  ports:
+  - port: 5043
+    protocol: TCP
+  selector:
+    app: da-logstash

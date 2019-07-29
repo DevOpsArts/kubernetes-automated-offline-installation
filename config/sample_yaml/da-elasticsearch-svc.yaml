@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: da-elasticsearch-svc
+  namespace: devopsart
+  labels:
+    run: da-elasticsearch-svc
+spec:
+  type: ClusterIP
+  ports:
+  - port: 9200
+    protocol: TCP
+  selector:
+    app: da-elasticsearch

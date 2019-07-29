@@ -1,0 +1,26 @@
+[root@k8s-node k8sautomation]# ./install.sh
+====================================================================================================
+Welcome back to Kubernetes offline installation Setup!!!
+
+
+
+
+Note : Please run this install in root user.
+====================================================================================================
+Did you run setup.sh in this server? (y/n).
+y
+
+
+This is your Kubernetes Master Server? if yes then type y for YES to proceed further or n for NO to proceed for Kuberntes Node Server setup (y/n).
+n
+
+
+Installing K8s node server applications, Estimated approx. time for installation is, 20 mins.
+
+
+Completed [################################################################################(100%)]
+
+K8s,Docker Installed in this server successfully,Please start K8s installation in Master Server.
+
+====================================================================================================
+[root@k8s-node k8sautomation]# c

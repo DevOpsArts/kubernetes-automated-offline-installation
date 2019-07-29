@@ -1,0 +1,13 @@
+Deploying Docker Registry Container
+62c3989e0259352d8f922e19d1560d6dc3eef5d33ab08927da3f25d123bc4951
+REPOSITORY                                                       TAG                 IMAGE ID            CREATED             SIZE
+docker.io/registry                                               2                   f32a97de94e1        4 months ago        25.8 MB
+k8s.gcr.io/kube-proxy                                            v1.13.4             fadcc5d2b066        5 months ago        80.3 MB
+k8s.gcr.io/kube-scheduler                                        v1.13.4             dd862b749309        5 months ago        79.6 MB
+k8s.gcr.io/kube-apiserver                                        v1.13.4             fc3801f0fc54        5 months ago        181 MB
+k8s.gcr.io/kube-controller-manager                               v1.13.4             40a817357014        5 months ago        146 MB
+quay.io/kubernetes-ingress-controller/nginx-ingress-controller   0.23.0              42d47fe0c78f        5 months ago        591 MB
+quay.io/coreos/flannel                                           v0.11.0-amd64       ff281650a721        6 months ago        52.6 MB
+k8s.gcr.io/coredns                                               1.2.6               f59dcacceff4        8 months ago        40 MB
+k8s.gcr.io/etcd                                                  3.2.24              3cab8e1b9802        10 months ago       220 MB
+k8s.gcr.io/pause                                                 3.1                 da86e6ba6ca1        19 months ago       742 kB

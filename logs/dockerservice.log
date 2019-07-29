@@ -1,0 +1,5 @@
+Updating K8sMaster IP to Docker registry
+Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service to /usr/lib/systemd/system/docker.service.
+
+
+Docker Packages installed and Docker Service is running

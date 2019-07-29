@@ -1,0 +1,12 @@
+[root@k8s-master k8sautomation]# docker images
+REPOSITORY                                           TAG                 IMAGE ID            CREATED             SIZE
+k8s.gcr.io/kube-proxy                                v1.14.1             20a2d7035165        24 hours ago        82.1 MB
+k8s.gcr.io/kube-apiserver                            v1.14.1             cfaa4ad74c37        24 hours ago        210 MB
+k8s.gcr.io/kube-controller-manager                   v1.14.1             efb3887b411d        24 hours ago        158 MB
+k8s.gcr.io/kube-scheduler                            v1.14.1             8931473d5bdb        24 hours ago        81.6 MB
+docker.io/registry                                   2                   f32a97de94e1        4 weeks ago         25.8 MB
+quay.io/coreos/flannel                               v0.11.0-amd64       ff281650a721        2 months ago        52.6 MB
+k8s.gcr.io/coredns                                   1.3.1               eb516548c180        2 months ago        40.3 MB
+k8s.gcr.io/etcd                                      3.3.10              2c4adeb21b4f        4 months ago        258 MB
+k8s.gcr.io/pause                                     3.1                 da86e6ba6ca1        15 months ago       742 kB
+####

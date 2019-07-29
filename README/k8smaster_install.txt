@@ -1,0 +1,88 @@
+[root@k8s-master k8sautomation]# ./install.sh
+====================================================================================================
+Welcome back to Kubernetes Offline installation Setup!!!
+
+
+
+
+Note : Please run this install.sh in root user.
+====================================================================================================
+Did you run setup.sh in this server? (y/n).
+y
+
+
+This is your Kubernetes Master Server? if yes then type y for YES to proceed further or n for NO to proceed for Kuberntes Node Server setup (y/n).
+y
+
+
+Installing and configuring Kubernetes Master packages.Estimated approx. time for installation is, 45 mins.
+
+
+[Installing K8s: Approx. 15 mins] Installing [################                                              (30%)]
+
+Installing K8s Application.
+
+
+Configuring K8s Application.
+
+
+Installing K8s Ingress.
+
+
+Bringing Docker Registry up.
+
+
+
+
+Please join the K8s node servers,kubeadm join command is located in K8sMaster extracted root directory. File name:k8snodeconfig.txt or copy the below lines in Node servers
+
+
+
+
+
+kubeadm join 192.168.1.125:6443 --token h3mjdb.x0on8ouyccuclcy9 \
+    --discovery-token-ca-cert-hash sha256:0665f9e2b5abeb7738b624c34a5573eda87156159c1ed48987f26f4d3293d676
+
+
+
+
+
+Did you run kubeadm join command in all node servers?(y)
+y
+
+
+Checking K8s node status
+
+NAME         STATUS     ROLES    AGE     VERSION
+k8s-master   Ready      master   8m29s   v1.14.1
+k8s-node     NotReady   <none>   18s     v1.14.1
+
+
+Validating the installation status,It will take approx. 10 mins. and it will show the results below,Please check all status should be running/completed
+
+
+
+
+Below the status of K8s Nodes:
+
+
+NAME         STATUS   ROLES    AGE   VERSION
+k8s-master   Ready    master   54m   v1.14.1
+k8s-node     Ready    <none>   46m   v1.14.1
+
+
+Below the status of K8s pods:
+
+
+NAME                                 READY   STATUS    RESTARTS   AGE
+coredns-fb8b8dccf-qd5vc              1/1     Running   0          54m
+coredns-fb8b8dccf-rvjmc              1/1     Running   0          54m
+etcd-k8s-master                      1/1     Running   0          53m
+kube-apiserver-k8s-master            1/1     Running   0          53m
+kube-controller-manager-k8s-master   1/1     Running   4          53m
+kube-flannel-ds-amd64-pbk2r          1/1     Running   0          46m
+kube-flannel-ds-amd64-v8bnd          1/1     Running   0          54m
+kube-proxy-cckgz                     1/1     Running   0          46m
+kube-proxy-j9xst                     1/1     Running   0          54m
+kube-scheduler-k8s-master            1/1     Running   3          53m
+====================================================================================================

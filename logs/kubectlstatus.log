@@ -1,0 +1,29 @@
+NAMESPACE       NAME                                            READY   STATUS    RESTARTS   AGE
+ingress-nginx   pod/nginx-ingress-controller-797b884cbc-jxzvk   1/1     Running   0          8m12s
+kube-system     pod/coredns-86c58d9df4-57phn                    1/1     Running   0          8m12s
+kube-system     pod/coredns-86c58d9df4-tcs5p                    1/1     Running   0          8m12s
+kube-system     pod/etcd-k8smaster1                             1/1     Running   0          7m19s
+kube-system     pod/kube-apiserver-k8smaster1                   1/1     Running   0          7m37s
+kube-system     pod/kube-controller-manager-k8smaster1          1/1     Running   0          7m33s
+kube-system     pod/kube-flannel-ds-amd64-dfnsh                 1/1     Running   0          8m13s
+kube-system     pod/kube-flannel-ds-amd64-tcfxq                 1/1     Running   0          97s
+kube-system     pod/kube-proxy-4g4ds                            1/1     Running   0          8m13s
+kube-system     pod/kube-proxy-9bfvx                            1/1     Running   0          97s
+kube-system     pod/kube-scheduler-k8smaster1                   1/1     Running   0          7m14s
+NAMESPACE       NAME                    TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)                      AGE
+default         service/kubernetes      ClusterIP   10.96.0.1     <none>        443/TCP                      8m33s
+ingress-nginx   service/ingress-nginx   NodePort    10.96.51.39   <none>        80:31257/TCP,443:30863/TCP   8m17s
+kube-system     service/kube-dns        ClusterIP   10.96.0.10    <none>        53/UDP,53/TCP                8m28s
+NAMESPACE     NAME                                     DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR                     AGE
+kube-system   daemonset.apps/kube-flannel-ds-amd64     2         2         2       2            2           beta.kubernetes.io/arch=amd64     8m17s
+kube-system   daemonset.apps/kube-flannel-ds-arm       0         0         0       0            0           beta.kubernetes.io/arch=arm       8m17s
+kube-system   daemonset.apps/kube-flannel-ds-arm64     0         0         0       0            0           beta.kubernetes.io/arch=arm64     8m17s
+kube-system   daemonset.apps/kube-flannel-ds-ppc64le   0         0         0       0            0           beta.kubernetes.io/arch=ppc64le   8m17s
+kube-system   daemonset.apps/kube-flannel-ds-s390x     0         0         0       0            0           beta.kubernetes.io/arch=s390x     8m17s
+kube-system   daemonset.apps/kube-proxy                2         2         2       2            2           <none>                            8m28s
+NAMESPACE       NAME                                       READY   UP-TO-DATE   AVAILABLE   AGE
+ingress-nginx   deployment.apps/nginx-ingress-controller   1/1     1            1           8m17s
+kube-system     deployment.apps/coredns                    2/2     2            2           8m28s
+NAMESPACE       NAME                                                  DESIRED   CURRENT   READY   AGE
+ingress-nginx   replicaset.apps/nginx-ingress-controller-797b884cbc   1         1         1       8m13s
+kube-system     replicaset.apps/coredns-86c58d9df4                    2         2         2       8m13s

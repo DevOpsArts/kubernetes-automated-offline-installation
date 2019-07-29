@@ -1,0 +1,12 @@
+Step 1:Installing Kubernetes Nginx Ingress
+namespace/ingress-nginx created
+configmap/nginx-configuration created
+configmap/tcp-services created
+configmap/udp-services created
+serviceaccount/nginx-ingress-serviceaccount created
+clusterrole.rbac.authorization.k8s.io/nginx-ingress-clusterrole created
+role.rbac.authorization.k8s.io/nginx-ingress-role created
+rolebinding.rbac.authorization.k8s.io/nginx-ingress-role-nisa-binding created
+clusterrolebinding.rbac.authorization.k8s.io/nginx-ingress-clusterrole-nisa-binding created
+deployment.apps/nginx-ingress-controller created
+service/ingress-nginx created
