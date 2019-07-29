@@ -1,4 +1,4 @@
-Note : Use this script where internet is not available.
+Note : Use this Kubernetes(K8s) automated offline installation script where internet is not available.
 
 Requirements:
 
