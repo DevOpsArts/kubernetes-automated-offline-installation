@@ -4,7 +4,9 @@ Requirements:
 
 OS : Centos/RHEL- 7.4,7.5
 Total servers : 3 (Kubernetes Master 1, Kubernetes node -2)
-Resources : 2Core,4GB RAM,25GB HDD each server
+Resources : 2Core,4GB RAM,25GB HDD each server.
+
+
 
 Deployments:
 
@@ -12,6 +14,8 @@ Deployments:
 2.Kubernetes Nginx Ingress
 3.Docker
 4.Docker registry
+
+Kubernetes installing version 1.13.4.
 
 Scripts:
 
@@ -23,8 +27,23 @@ Scripts:
 README directory : It has all the successful execution data to compare with your installation.(Basically for reference)
 
 Logs :  All installtions log will be logged for each and every process during the installation.
+
 ------------------------------------------------------------------------------------------------
 Installation:
+
+Download this git repository and below links images from Internet machine,
+
+git clone https://github.com/DevOpsArts/kubernetes-automated-offline-installation.git
+
+K8sMaster image:
+
+https://drive.google.com/file/d/1z-SSA4ZBxqfRtY-Gv38lppgqo3UvtyUr/view?usp=sharing
+
+K8sNode image :
+
+https://drive.google.com/file/d/1OYvR9A1oNjbzAuU-JE-HHfAbzi9dUz-k/view?usp=sharing
+
+And keep the downloaded both images in, app/k8simages directory.
 
 Master server :
 
@@ -42,3 +61,5 @@ Testing an APP,
 1.Upload your image to local docker registry.
 2.Create pod and svc for the app (examples pods,svc files are in config directory).
 3.Run the app in kubernetes.
+
+----------------------------------------------------------------------------------------------------
