@@ -28,9 +28,9 @@ Scripts:
 
 2.install.sh - will install the required packages and configure it
 
-4.verify.sh - will show the status of K8s pods and services.
+3.verify.sh - will show the status of K8s pods and services.
 
-5.Uninstall.sh:  uninstall.sh will remove all the K8s applications from the server.
+4.Uninstall.sh:  uninstall.sh will remove all the K8s applications from the server.
 
 README directory : It has all the successful execution data to compare with your installation.(Basically for reference)
 
